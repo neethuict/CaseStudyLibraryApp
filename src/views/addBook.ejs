@@ -92,19 +92,19 @@
           <!--/stories   code for signup form-->
           <div class="row">    
             <br>
-            <form action="/" class="login" onsubmit="return validateSignUp()">
+            <form action="/admin/add" method = "POST" class="login">
                 <br>
                 <br>
                 <div class="col-md-10 col-sm-9">
                     <label>Title</label>
                     <br>
-                    <input type="text" placeholder="Enter Title" id="title">
+                    <input type="text" placeholder="Enter Title" name="title">
                 </div>
                 <br>
                 <div class="col-md-10 col-sm-9">
                   <label>Author</label>
                   <br>
-                  <input type="text" placeholder="Enter author name" id="author">
+                  <input type="text" placeholder="Enter author name" name="author">
                 </div>
                 <br>
                 <br>
@@ -112,23 +112,18 @@
                 <div class="col-md-10 col-sm-9">
                     <label>Genre</label>
                     <br>
-                    <input type="text" placeholder="Enter genre" id="genre">
+                    <input type="text" placeholder="Enter genre" name="genre">
                 </div>
                 <br>
                 <div class="col-md-10 col-sm-9">
                   <label>Image</label>
                   <br>
-                  <input type="text" placeholder="Upload image" id="author">
+                  <input type="file" placeholder="Upload image" name="image">
                 </div>
                 <br>
-                <br>
-               <br>
-               <br>
-               <br>
                 <div class="col-md-10 col-sm-9">
-                   <button id="add-btn">Add Book</button>
+                   <button type = "submit" >Add Book</button>
                 </div>
-                <br>
          </form>
           </div>
           <!--/stories-->
